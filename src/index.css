@@ -1,0 +1,72 @@
+/* BookFlix theme: warm library tones */
+:root {
+  --espresso: #3b2a20;
+  --brown: #6f4e37;
+  --brown-light: #8b5e3c;
+  --accent: #a0602a;
+  --accent-hover: #864e20;
+  --gold: #e8b04b;
+  --cream: #fdf6ec;
+  --paper: #fffaf3;
+  --ink: #2b211b;
+  --muted: #7a6a5d;
+  --border: #e6d8c3;
+  --danger: #b3412f;
+
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", "Segoe UI", Roboto, sans-serif;
+
+  --radius: 10px;
+  --shadow: 0 2px 8px rgba(59, 42, 32, 0.12);
+  --shadow-lift: 0 10px 24px rgba(59, 42, 32, 0.22);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+}
+
+button {
+  font-family: inherit;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  color: var(--ink);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 3px rgba(160, 96, 42, 0.2);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
